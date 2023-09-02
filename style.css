@@ -1,123 +1,173 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 :root {
-    font-size: 62.5%;
-    --text-color: #E1E1E6;
-    --green-primary: #092D38;
-    --green-secondary: #4A808C;
-    --green-third: #065E7C;
+  font-size: 62.5%;
+  --text-color: #e1e1e6;
+  --green-primary: #092d38;
+  --green-secondary: #06181C;
+  --green-third: #065e7c;
+  --green-fourth: #030B0D;
 }
- 
+
 body {
-    background-color: #000;
-    font-family: 'Roboto', sans-serif;
-    color: var(--text-color);
-    font-size: 1.6rem;
+  background-color: #000;
+  font-family: 'Roboto', sans-serif;
+  color: var(--text-color);
+  font-size: 1.6rem;
 
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 
-.sr-only  {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    padding: 0;
-    margin: -1px;
-    overflow: hidden;
-    clip: rect(0, 0, 0, 0);
-    white-space: nowrap;
-    border: 0;
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
 }
 
 #app {
-    padding: 2rem;
-    width: 1100px;
-    margin: 0 auto;
-    margin-top: 100px;
-    border: 1px solid red;
+  padding: 2rem;
+  width: 1100px;
+  margin: 0 auto;
 }
 
 header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 
-.user img {
-    width: 56px;
-    height: 56px;
-    border-radius: 56px;
+  margin: 2.5rem 0;
 }
 
 header img {
-    width: 186px;
-    height: 32px;
+  width: 186px;
+  height: 32px;
 }
 
 .search {
-    display: flex;
-    align-items: center;
-    gap: 8px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
 }
 
 .search input {
-    display: flex;
-    padding: 16px;
-    align-items: center;
-    width: 462px;
-    border-radius: 5px;
-    background: #06181C;
-    border: none;
-    color: #7C7C8A;
+  display: flex;
+  padding: 16px;
+  align-items: center;
+  width: 462px;
+  border-radius: 5px;
+  background: #06181c;
+  border: none;
+  color: #7c7c8a;
 }
 
-.search input::placeholder{
-    color: #7C7C8A;
+.search input::placeholder {
+  color: #7c7c8a;
 }
 
 button {
-    display: flex;
-    padding: 12px 32px;
-    justify-content: center;
-    align-items: center;
-    gap: 8px;
-    border-radius: 5px;
-    background: #065E7C;
-    border: none;
-    cursor: pointer;
+  display: flex;
+  padding: 12px 32px;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  border-radius: 5px;
+  background: #065e7c;
+  border: none;
+  cursor: pointer;
 
-    font-family: 'Roboto', sans-serif;
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 24px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 24px;
 
-    text-transform: uppercase;
-    color: #E1E1E6;
+  text-transform: uppercase;
+  color: #e1e1e6;
 }
 
 button:hover {
-    background: #FFF;
-    color: #065E7C;
-
+  background: #fff;
+  color: var(--green-third);
 }
 
 button i {
-    font-size: 24px;
+  font-size: 24px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 8rem;
+}
+
+table th {
+  background-color: var(--green-primary);
+  text-align: left;
+  font-weight: 700;
+  padding: 1.5rem;
+}
+
+table th:first-child {
+  border-top-left-radius: 0.6rem;
+}
+
+table th:last-child {
+  border-top-right-radius: 0.6rem;
+}
+
+table td {
+  padding: 1.5rem;
+  text-align: left;
+}
+
+table tr:nth-child(odd) {
+    background-color: var(--green-fourth);
+}
+
+table tr:nth-child(even) {
+    background-color: var(--green-secondary);
+}
+
+td.user{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+td.user a p {
+    font-weight: bold;
+}
+
+.user img {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  object-fit: cover;
 }
 
 .action button {
-    background-color: transparent;
-    color: #F75A68;
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 160%;
-    text-transform: capitalize;
-    cursor: pointer;
+  background-color: transparent;
+  color: #f75a68;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 160%;
+  text-transform: capitalize;
+  cursor: pointer;
+}
+
+.user a {
+  text-decoration: none;
+  color: var(--text-color);
 }
