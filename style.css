@@ -165,6 +165,7 @@ td.user a p {
   line-height: 160%;
   text-transform: capitalize;
   cursor: pointer;
+  padding: 0;
 }
 
 .user a {

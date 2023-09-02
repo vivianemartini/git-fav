@@ -1,6 +1,5 @@
 # Git-fav
 
-- SPA - Single Page Application
-- JSON - JavaScript Object Notion
+- GitHub API
 
 <img src="./assets/git-fav-cover.png">
