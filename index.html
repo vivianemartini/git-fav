@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Git-Fav</title>
+</head>
+<body>
+    <div id="app">
+        <header>
+            <img src="./assets/icon.svg">
+            <div class="search">
+                <label class="sr-only" for="input-search">Usuário do Github</label>
+                <input id="input-searach" type="text" placeholder="Digite o Github username que quer favoritar">
+                <button>
+                    <i class="ph-thin ph-star"></i>
+                    Favoritar</button>
+            </div>
+        </header>
+        <table>
+            <thead>
+                <tr>
+                    <th>Usuário</th>
+                    <th>Repositories</th>
+                    <th>Followers</th>
+                    <th>Ação</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="user">
+                        <img src="https://github.com/maykbrito.png" alt="Imagem do perfil">
+                        <a href="https://github.com/maykbrito.png" target="_blank">
+                            <p>Maik Brito</p>
+                            <span>maykbrito</span>
+                        </a>
+                    </td>
+                    <td class="repositoreis">76</td>
+                    <td class="followers">9586</td>
+                    <td class="action"><button>Remover</button></td>
+                </tr>
+
+                <tr>
+                    <td class="user">
+                        <img src="https://github.com/diego3g.png" alt="Imagem do perfil">
+                        <a href="https://github.com/diego3g.png" target="_blank">
+                            <p>Diego</p>
+                            <span>maykbrito</span>
+                        </a>
+                    </td>
+                    <td class="repositoreis">48</td>
+                    <td class="followers">2205</td>
+                    <td class="action"><button>Remover</button></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>
