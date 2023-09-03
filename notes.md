@@ -10,3 +10,5 @@
  - Métodos estáticos e promessas
     - `fetch`
 - Comunicação com API - `https://api.github.com/users/diego3g`
+- `async adn await`
+- `try, catch, throw`
