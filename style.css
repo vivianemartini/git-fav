@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@700&display=swap');
+
 * {
   margin: 0;
   padding: 0;
@@ -108,7 +110,10 @@ button i {
 table {
   width: 100%;
   border-collapse: collapse;
+  overflow: hidden;
   margin-top: 8rem;
+  border: 1px solid #4A808C;
+  border-bottom: none;
 }
 
 table th {
@@ -129,6 +134,7 @@ table th:last-child {
 table td {
   padding: 1.5rem;
   text-align: left;
+  border-bottom: 1px solid #4A808C;
 }
 
 table tr:nth-child(odd) {
@@ -172,3 +178,17 @@ td.user a p {
   text-decoration: none;
   color: var(--text-color);
 }
+
+tfoot {
+  height: 500px;
+  color: #4E5455;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  font-family: 'Roboto Mono', monospace;
+}
+
+.noFavBox {
+  text-align: center;
+}
+
